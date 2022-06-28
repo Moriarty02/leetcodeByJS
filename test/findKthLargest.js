@@ -29,5 +29,5 @@ var findKthLargest = function (nums, k) {
   }
   console.log(nums)
 };
-console.log("findKthLargest");
-console.log(findKthLargest([3, 2, 1, 5, 6, 4], 2));
+// console.log("findKthLargest");
+// console.log(findKthLargest([3, 2, 1, 5, 6, 4], 2));
