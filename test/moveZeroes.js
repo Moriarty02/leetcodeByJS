@@ -25,11 +25,11 @@ var moveZeroes = function (nums) {
     
   }
 };
-let nums1 = [0, 0, 1];
-let nums2 = [0,1,0,3,12] 
-moveZeroes(nums1);
-moveZeroes(nums2);
+// let nums1 = [0, 0, 1];
+// let nums2 = [0,1,0,3,12] 
+// moveZeroes(nums1);
+// moveZeroes(nums2);
 
-console.log(nums1);
-console.log(nums2);
+// console.log(nums1);
+// console.log(nums2);
 
