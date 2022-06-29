@@ -34,7 +34,7 @@ var removeElement = function (nums, val) {
   }
   return  index;
 };
-let nums = [0, 1, 2, 2, 3, 0, 4, 2],
-  val = 2;
-let newLen = removeElement(nums, 2);
-console.log(newLen);
+// let nums = [0, 1, 2, 2, 3, 0, 4, 2],
+//   val = 2;
+// let newLen = removeElement(nums, 2);
+// console.log(newLen);
