@@ -47,6 +47,6 @@ var maxDepth = function (root) {
   }
   return depth;
 };
-console.log("maxDepth");
+// console.log("maxDepth");
 // console.log(binaryTreePaths(node3));
-console.log(maxDepth(node3));
+// console.log(maxDepth(node3));
