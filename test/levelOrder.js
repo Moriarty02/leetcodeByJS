@@ -44,6 +44,6 @@ var levelOrder = function (root) {
   }
   return ret;
 };
-console.log("levelOrder");
-let result = levelOrder(node3);
-console.log(result);
+// console.log("levelOrder");
+// let result = levelOrder(node3);
+// console.log(result);
