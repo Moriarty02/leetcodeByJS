@@ -1,6 +1,7 @@
 
 
-export const log=(inputs,func)=>{
-  let ret = inputs.map((input) => func(input[0], input[1]));
-  console.log(ret);
+export const log=(func,...res)=>{
+  console.log("------------------------");
+   console.log(func.name)
+   console.log(func.apply(null, res));
 }

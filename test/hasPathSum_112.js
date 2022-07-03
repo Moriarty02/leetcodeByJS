@@ -58,5 +58,5 @@ var hasPathSum = function (root, targetSum) {
   traverse(root, 0);
   return flag;
 };
-console.log("hasPathSum");
-console.log(hasPathSum(node3, 12));
+// console.log("hasPathSum");
+// console.log(hasPathSum(node3, 12));
