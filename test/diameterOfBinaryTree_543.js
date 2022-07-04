@@ -30,4 +30,4 @@ var diameterOfBinaryTree = function (root) {
   return max;
 };
 
-log(diameterOfBinaryTree, root);
+// log(diameterOfBinaryTree, root);
