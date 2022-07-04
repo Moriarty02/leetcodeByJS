@@ -11,4 +11,15 @@ node3.right = node20;
 node9.right = node6;
 node20.left = node15;
 node20.right = node7;
+
+let node11 = new TreeNode(11);
+let node22 = new TreeNode(22);
+let node33 = new TreeNode(33);
+let node44 = new TreeNode(44);
+let node55 = new TreeNode(55);
+// node33.left = node11;
+node33.right = node22;
+node11.left = node33;
+// node44.right = node55;
 export const root = node3;
+export const bstHead = node11
