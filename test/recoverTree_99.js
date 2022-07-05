@@ -51,4 +51,4 @@ let switchNode = (head1, head2) => {
     head1.val = tmp;
   }
 };
-log(recoverTree, bstHead);
+// log(recoverTree, bstHead);
