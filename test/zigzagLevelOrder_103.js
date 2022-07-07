@@ -51,4 +51,4 @@ var zigzagLevelOrder = function (root) {
   }
   return ret;
 };
-log(zigzagLevelOrder, node3);
+// log(zigzagLevelOrder, node3);
