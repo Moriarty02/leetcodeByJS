@@ -17,7 +17,7 @@ import { log } from "./log.js";
 var recoverTree = function (root) {
   let items = [];
 
-  middTraverse(root, items);
+  middtraversal(root, items);
   let errorIndex1 = null;
   let errorIndex2 = null;
   for (let i = 0; i < items.length - 1; i++) {
@@ -38,11 +38,11 @@ var recoverTree = function (root) {
   switchNode(items[errorIndex1], items[errorIndex2]);
   return root;
 };
-let middTraverse = (root, values) => {
+let middtraversal = (root, values) => {
   if (!root) return;
-  middTraverse(root.left, values);
+  middtraversal(root.left, values);
   values.push(root);
-  middTraverse(root.right, values);
+  middtraversal(root.right, values);
 };
 let switchNode = (head1, head2) => {
   let tmp = head2.val;

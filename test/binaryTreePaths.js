@@ -25,18 +25,18 @@ node2.left = node5;
 
 export const  binaryTreePaths = function (root) {
   let ret = [];
-  traverse(root, "", ret);
+  traversal(root, "", ret);
   return ret;
 };
-let traverse = (root, path, ret) => {
+let traversal = (root, path, ret) => {
   if (!root.left && !root.right) {
     ret.push(path + root.val);
   }
   if (root.left) {
-    traverse(root.left, path + root.val + "->", ret);
+    traversal(root.left, path + root.val + "->", ret);
   }
   if (root.right) {
-    traverse(root.right, path + root.val + "->", ret);
+    traversal(root.right, path + root.val + "->", ret);
   }
 };
 

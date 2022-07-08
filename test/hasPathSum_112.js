@@ -38,7 +38,7 @@ node20.right = node7;
 
 var hasPathSum = function (root, targetSum) {
   let flag = false;
-  let traverse = function (root, sum) {
+  let traversal = function (root, sum) {
     if (flag) return;//已找到后续就不要在执行了
     if (root === null) return;
     if (!root.left && !root.right) {
@@ -49,13 +49,13 @@ var hasPathSum = function (root, targetSum) {
       }
     }
     if (root.left) {
-      traverse(root.left, sum + root.val);
+      traversal(root.left, sum + root.val);
     }
     if (root.right) {
-      traverse(root.right, sum + root.val);
+      traversal(root.right, sum + root.val);
     }
   };
-  traverse(root, 0);
+  traversal(root, 0);
   return flag;
 };
 // console.log("hasPathSum");

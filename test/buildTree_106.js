@@ -16,6 +16,7 @@ var buildTree = function(inorder, postorder) {
 
       // 下标减一
       post_idx--;
+      // 一定要先构建右子树 因为后序遍历是 左 右 根 push 到调用栈 
       // 构造右子树
       root.right = helper(index + 1, in_right);
       // 构造左子树

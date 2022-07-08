@@ -42,6 +42,8 @@ let buildTreeHelper = function (
   root.left = buildTreeHelper(
     preorder,
     preStart + 1,
+    // povindex -1 (中序遍历中的左子树结尾坐标)- inStart (中序遍历中的左子树开始坐标)= 左子树长度 = x(前序遍历左子树的结尾坐标)- (preStart +1 ) (前序遍历左子树的开始坐标)
+    // 求的x = povitIndex - inStart + preStart
     povitIndex - inStart + preStart,
     inorder,
     inStart,
@@ -50,6 +52,7 @@ let buildTreeHelper = function (
   );
   root.right = buildTreeHelper(
     preorder,
+    // 前序遍历右子树的开始坐标即 x + 1
     povitIndex - inStart + preStart + 1,
     preEnd,
     inorder,

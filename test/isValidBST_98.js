@@ -18,32 +18,32 @@ var isValidBST = function (root) {
   if (!root.left && !root.right) return true;
   let prev = -Infinity;
   let flag = true;
-  let traverse = (root) => {
+  let traversal = (root) => {
     if (!root) return;
-    traverse(root.left);
+    traversal(root.left);
     if (root.val <= prev) {
       flag = false;
       return;
     } else {
       prev = root.val;
     }
-    traverse(root.right);
+    traversal(root.right);
   };
-  traverse(root);
+  traversal(root);
   return flag;
 };
 // better
 var isValidBST = function (root) {
   let prev = -Infinity;
-  let traverse = function (root) {
+  let traversal = function (root) {
     if (!root) return true;
-    if (!traverse(root.left)) return false;
+    if (!traversal(root.left)) return false;
 
     if (root.val <= prev) return false;
     prev = root.val;
-    return traverse(root.right);
+    return traversal(root.right);
   };
-  return traverse(root)
+  return traversal(root)
 };
 // let bst = buildBST([0,-1]);
 // console.log(bst);

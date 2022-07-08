@@ -21,13 +21,13 @@ node2.right = node3;
 shadow_node2.right = node3;
 var preorderTraversal = function (root) {
   let ret = [];
-  let traverse = (root, ret) => {
+  let traversal = (root, ret) => {
     if (!root) return;
     ret.push(root.val);
-    traverse(root.left, ret);
-    traverse(root.right, ret);
+    traversal(root.left, ret);
+    traversal(root.right, ret);
   };
-  traverse(root, ret);
+  traversal(root, ret);
   return ret;
 };
 // console.log("preorderTraversal");

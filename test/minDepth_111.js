@@ -28,17 +28,17 @@ node9.right = node20;
 node20.right = node15;
 node15.right = node7;
 let min = Number.MAX_VALUE;
-let traverse = (root, depth) => {
+let traversal = (root, depth) => {
   if (!root) return;
   if (!root.left && !root.right) {
     min = Math.min(min, depth);
   }
-  traverse(root.left, depth + 1);
-  traverse(root.right, depth + 1);
+  traversal(root.left, depth + 1);
+  traversal(root.right, depth + 1);
 };
 var minDepth = function (root) {
   if (!root) return 0;
-  traverse(root, 1);
+  traversal(root, 1);
   return min;
 };
 // console.log("minDepth");
