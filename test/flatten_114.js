@@ -32,4 +32,4 @@ var flatten = function (root) {
   }
   return arr[0];
 };
-log(flatten, root);
+// log(flatten, root);

@@ -17,9 +17,25 @@ let node22 = new TreeNode(22);
 let node33 = new TreeNode(33);
 let node44 = new TreeNode(44);
 let node55 = new TreeNode(55);
-// node33.left = node11;
-node33.right = node22;
-node11.left = node33;
-// node44.right = node55;
+node33.left = node11;
+node33.right = node44;
+// node11.left = node33;
+
+node44.right = node55;
+
+// 783 case 
+// [1,0,48,null,null,12,49]
+let node783_1 = new TreeNode(1);
+let node783_0 = new TreeNode(0);
+let node783_48 = new TreeNode(48);
+let node783_12 = new TreeNode(12);
+let node783_49 = new TreeNode(49);
+node783_1.left = node783_0;
+node783_1.right = node783_48;
+node783_48.left = node783_12;
+node783_48.right = node783_49;
+// 783 case 
+
 export const root = node3;
 export const bstHead = node11
+export const bstHead2 = node783_1;
