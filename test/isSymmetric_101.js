@@ -2,7 +2,7 @@ var isSymmetric = function (root) {
   if (root == null) {
     return true;
   }
-  let = function (node1, node2) {
+  let cmp = function (node1, node2) {
     if (node1 == null && node2 == null) {
       return true;
     }
@@ -11,5 +11,5 @@ var isSymmetric = function (root) {
     }
     return cmp(node1.left, node2.right) && cmp(node1.right, node2.left);
   };
-  return traversal(root.left, root.right);
+  return cmp(root.left, root.right);
 };
