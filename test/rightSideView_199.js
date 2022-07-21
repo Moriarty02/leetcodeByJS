@@ -23,4 +23,4 @@ var rightSideView = function (root) {
   }
   return result;
 };
-log(rightSideView, bstHead2);
+// log(rightSideView, bstHead2);

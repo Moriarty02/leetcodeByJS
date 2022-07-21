@@ -15,10 +15,9 @@ var findTarget = function (root, k) {
   let set = new Set();
   let traversal = function (head, set) {
     if (!head) return false;
-    traversal(head.left, set);
     if (set.has(k - head.val)) return true;
     set.add(head.val);
-    traversal(head.right, set);
+    return traversal(head.left, set) || traversal(head.right, set);
   };
   return traversal(root, set);
 };
