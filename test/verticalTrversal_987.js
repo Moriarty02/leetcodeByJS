@@ -63,4 +63,4 @@ var verticalTraversal = function(root) {
   return ans;
 }
 
-log(verticalTraversal2, root);
+// log(verticalTraversal2, root);
