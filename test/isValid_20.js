@@ -34,7 +34,8 @@ var isValid_1 = function (s) {
   }
   return false;
 };
-// 这个解法妙啊
+
+// 这个解法妙啊   效率好低 哈哈哈  频繁修改字符串导致的效率低
 let isValid_2 = function (s) {
   while (s.includes("()") || s.includes("{}") || s.includes("[]")) {
     s = s.replace("{}", "");
