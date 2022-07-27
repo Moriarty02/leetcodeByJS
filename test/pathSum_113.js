@@ -18,4 +18,4 @@ function dfs(root, path, arr, sum) {
   dfs(root.right, path, arr, sum - root.val);
   path.pop();
 }
-log(pathSum, root, 18);
+// log(pathSum, root, 18);

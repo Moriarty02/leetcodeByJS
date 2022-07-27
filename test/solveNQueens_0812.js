@@ -73,4 +73,4 @@ var generate = function (n, queens) {
   return board;
 };
 
-log(solveNQueens, 5);
+// log(solveNQueens, 5);
