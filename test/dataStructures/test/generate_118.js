@@ -28,8 +28,8 @@ var generate = function (numRows) {
 // @lc code=end
 
 let numRows = 5;
-console.log(`generate`);
-console.log(generate(numRows));
+// console.log(`generate`);
+// console.log(generate(numRows));
 //     1
 //    1 1
 //   1 2 1

@@ -16,10 +16,10 @@ var matrixReshape = function(mat, r, c) {
   return result;
 };
 // let  mat = [[1,2],[3,4]], r = 1, c = 4
-console.log(`matrixReshape`)
+// console.log(`matrixReshape`)
 // 输出：[[1,2,3,4]]
 
-let mat = [[1,2],[3,4]], r = 2, c = 4
+// let mat = [[1,2],[3,4]], r = 2, c = 4
 // console.log(matrixReshape(mat, r, c));
 
 // 输出：[[1,2],[3,4]]
