@@ -19,10 +19,10 @@
  */
 var deepestLeavesSum = function (root) {
   let queue = [];
-  let levelSums = [];
+  let levelSums = 0;
   if (!root) return 0;
   queue.push(root);
-  while (queue.length!==0) {
+  while (queue.length !== 0) {
     let size = queue.length;
     let sum = 0;
     while (size !== 0) {
@@ -30,7 +30,7 @@ var deepestLeavesSum = function (root) {
       size--;
       sum += cur.val;
       if (size === 0) {
-        levelSums.push(sum);
+        levelSums = sum;
       }
       if (cur.left) {
         queue.push(cur.left);
@@ -40,6 +40,6 @@ var deepestLeavesSum = function (root) {
       }
     }
   }
-  return levelSums[levelSums.length - 1];
+  return levelSums
 };
 // @lc code=end
