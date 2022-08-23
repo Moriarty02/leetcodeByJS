@@ -16,5 +16,10 @@
 https://leetcode.cn/study-plan/data-structures/?progress=6b2rchh
 
 ```
+2022年08月23日 
+家里网烦死了 github 经常打不通
+只更新leecode 了
+https://leetcode.cn/u/quirky-knuthrht/
+
 
 
