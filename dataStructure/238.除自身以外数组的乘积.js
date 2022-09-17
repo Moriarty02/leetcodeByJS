@@ -13,6 +13,9 @@ var productExceptSelf = function (nums) {
 //   let left = new Array(nums.length);
   let right = new Array(nums.length);
   let answer = new Array(nums.length);
+  // 当前位置的左边乘积*右边乘积
+  //  左乘积 = 前一个*前一个的乘积 左边第一个为1
+  // 右乘积=后一个*后一个的乘积 右边最后一个为1
   answer[0] = 1;
   for (let i = 1; i < nums.length; i++) {
     answer[i] = nums[i - 1] * answer[i - 1];
