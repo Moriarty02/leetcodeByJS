@@ -26,6 +26,8 @@ https://leetcode.cn/study-plan/data-structures/?progress=6b2rchh
 拿下9月的每日一题
 
 ```
+2022年10月13日
+特别感谢题解大佬，在探索中给予的支持与指导 [宫水三叶](https://leetcode.cn/u/ac_oier/)
 
 
 
