@@ -26,7 +26,7 @@ var maxRepeating = function(sequence, word) {
     }
     return count;
 };
-let ret= maxRepeating("abababcacb", "ab")
-console.log(ret);
+// let ret= maxRepeating("abababcacb", "ab")
+// console.log(ret);
 // @lc code=end
 
